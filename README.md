@@ -25,6 +25,8 @@ $ docker-compose up
 
 ```bash
 docker run -it <image_id> npm run test
+# or
+$ docker-compose up
 ```
 
 ### build prod

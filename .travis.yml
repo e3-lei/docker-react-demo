@@ -7,3 +7,16 @@ before_install:
 
 script:
   - docker run leiw/docker-react-demo npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "docker-react-demo"
+  env: "DockerReactDemo-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-179064999225"
+  bucket_path: "docker-react-demo"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"

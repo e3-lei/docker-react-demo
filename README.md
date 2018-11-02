@@ -2,7 +2,7 @@
 
 ## Docker
 
-remove node_modules before build
+remove node_modules before build, a little faster
 
 ### build dev
 

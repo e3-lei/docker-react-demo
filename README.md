@@ -42,6 +42,12 @@ $ docker run -p 8080:80 <image_id>
 # goto http://localhost:8080/
 ```
 
+## aws
+
+* create an aws `elasticbeanstalk` instance
+* update deploy config in the `travis.yml`, if needed
+* `git push origin master`
+
 ## see also
 
 [udemy docker and kubernetes](https://www.udemy.com/docker-and-kubernetes-the-complete-guide/learn/v4/content)
